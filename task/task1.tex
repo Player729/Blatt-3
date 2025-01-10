@@ -21,7 +21,7 @@
 
 % Title Section
 \begin{flushleft}
-{\bfseries\Large Werkzeuge f\"ur das wissenschaftliche Arbeiten}\\
+{\bfseries\Large Werkzeuge für das wissenschaftliche Arbeiten}\\
 \normalsize Python for Machine Learning and Data Science\\
 \normalfont\hspace*{4.5cm}Abgabe: 15.12.2023\\
 \hrulefill
@@ -41,7 +41,7 @@ Inhaltsverzeichnis \dotfill Seite 1\\
 % Main Content
 \section{1. Projektaufgabe}
 \justify
-In dieser Aufgabe besch\"aftigen wir uns mit Objektorientierung in Python. Der Fokus liegt auf der Implementierung einer Klasse, dabei nutzen wir insbesondere auch Magic Methods.
+In dieser Aufgabe beschäftigen wir uns mit Objektorientierung in Python. Der Fokus liegt auf der Implementierung einer Klasse, dabei nutzen wir insbesondere auch Magic Methods.
 
 \begin{figure}[h!]
     \centering
@@ -51,9 +51,9 @@ In dieser Aufgabe besch\"aftigen wir uns mit Objektorientierung in Python. Der F
 
 \subsection{1.1. Einleitung}
 \justify
-Ein Datensatz besteht aus mehreren Daten, ein einzelnes Datum wird durch ein Objekt der Klasse "DataSetItem" repr\"asentiert. Jedes Datum hat einen Namen (Zeichenkette), eine ID (Zahl) und beliebigen Inhalt.
+Ein Datensatz besteht aus mehreren Daten, ein einzelnes Datum wird durch ein Objekt der Klasse "DataSetItem" repräsentiert. Jedes Datum hat einen Namen (Zeichenkette), eine ID (Zahl) und beliebigen Inhalt.
 
-Nun sollen mehrere Daten, Objekte vom Typ "DataSetItem", in einem Datensatz zusammengefasst werden. Sie haben sich schon auf eine Schnittstelle und die ben\"otigten Operationen, die ein Datensatz unterst\"utzen muss, geeinigt. Es gibt eine Klasse "DataSetInterface", die die Schnittstelle definiert und Operationen jedes Datensatzes angibt. Bisher fehlt aber noch die Implementierung eines Datensatzes mit allen Operationen.
+Nun sollen mehrere Daten, Objekte vom Typ "DataSetItem", in einem Datensatz zusammengefasst werden. Sie haben sich schon auf eine Schnittstelle und die benötigten Operationen, die ein Datensatz unterstützen muss, geeinigt. Es gibt eine Klasse "DataSetInterface", die die Schnittstelle definiert und Operationen jedes Datensatzes angibt. Bisher fehlt aber noch die Implementierung eines Datensatzes mit allen Operationen.
 
 Implementieren Sie eine Klasse "DataSet" als eine Unterklasse von "DataSetInterface".
 
@@ -70,23 +70,23 @@ Es gibt drei Dateien: "dataset.py", "main.py" und "implementation.py".
 \justify
 Bei der Klasse "DataSet" sind insbesondere folgende Methoden zu implementieren. Die genaue Spezifikation finden Sie in der "dataset.py":
 \begin{itemize}
-    \item \_\_setitem\_\_(self, name, id\_content): Hinzuf\"ugen eines Datums mit Name, ID und Inhalt.
-    \item \_\_iadd\_\_(self, item): Hinzuf\"ugen eines "DataSetItem".
-    \item \_\_delitem\_\_(self, name): L\"oschen eines Datums auf Basis des Namens. Jeder Name ist ein eindeutiger Schl\"ussel und darf nur einmal pro Datensatz vorkommen.
-    \item \_\_contains\_\_(self, name): Pr\"ufung, ob ein Datum mit diesem Namen im Datensatz vorhanden ist.
-    \item \_\_getitem\_\_(self, name): Abrufen des Datums \"uber seinen Namen.
-    \item \_\_and\_\_(self, dataset): Schnittmenge zweier Datens\"atze bestimmen und als neuen Datensatz zur\"uckgeben.
-    \item \_\_or\_\_(self, dataset): Vereinigungen zweier Datens\"atze bestimmen und als neuen Datensatz zur\"uckgeben.
-    \item \_\_iter\_\_(self): Iteration \"uber alle Daten des Datensatzes (optional mit Sortierung f\"ur die Reihenfolge).
-    \item filtered\_iterate(self, filter): Gefilterte Iteration \"uber einen Datensatz mittels Lambda-Funktion mit Parametern Name und ID.
+    \item \_\_setitem\_\_(self, name, id\_content): Hinzufügen eines Datums mit Name, ID und Inhalt.
+    \item \_\_iadd\_\_(self, item): Hinzufügen eines "DataSetItem".
+    \item \_\_delitem\_\_(self, name): Löschen eines Datums auf Basis des Namens. Jeder Name ist ein eindeutiger Schlüssel und darf nur einmal pro Datensatz vorkommen.
+    \item \_\_contains\_\_(self, name): Prüfung, ob ein Datum mit diesem Namen im Datensatz vorhanden ist.
+    \item \_\_getitem\_\_(self, name): Abrufen des Datums über seinen Namen.
+    \item \_\_and\_\_(self, dataset): Schnittmenge zweier Datensätze bestimmen und als neuen Datensatz zurückgeben.
+    \item \_\_or\_\_(self, dataset): Vereinigungen zweier Datensätze bestimmen und als neuen Datensatz zurückgeben.
+    \item \_\_iter\_\_(self): Iteration über alle Daten des Datensatzes (optional mit Sortierung für die Reihenfolge).
+    \item filtered\_iterate(self, filter): Gefilterte Iteration über einen Datensatz mittels Lambda-Funktion mit Parametern Name und ID.
     \item \_\_len\_\_(self): Anzahl der Daten im Datensatz abrufen.
 \end{itemize}
 
 \section{2. Abgabe}
 \justify
-Programmieren Sie die Klasse "DataSet" in der Datei "implementation.py", um die oben beschriebene Aufgabe im VPL zu l\"osen. Sie k\"onnen auch direkt auf Ihrem Computer programmieren; dazu finden Sie alle drei ben\"otigten Dateien zum Download im Moodle.
+Programmieren Sie die Klasse "DataSet" in der Datei "implementation.py", um die oben beschriebene Aufgabe im VPL zu lösen. Sie können auch direkt auf Ihrem Computer programmieren; dazu finden Sie alle drei benötigten Dateien zum Download im Moodle.
 
-Das VPL nutzt den gleichen Code, wobei die "main.py" um weitere Testf\"alle und \"Uberpr\"ufungen erweitert wurde. Die \"Uberpr\"ufungen dienen dazu sicherzustellen, dass Sie die richtigen Klassen nutzen.
+Das VPL nutzt den gleichen Code, wobei die "main.py" um weitere Testfälle und Überprüfungen erweitert wurde. Die Überprüfungen dienen dazu sicherzustellen, dass Sie die richtigen Klassen nutzen.
 
 \vspace{1cm}
 \hrulefill
